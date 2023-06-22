@@ -28,6 +28,8 @@ import React from "react";
                 }
                 decreaseQuantity=()=>
                 {
+                    if(this.state.qty===0)
+                    return
                     this.setState((prevState)=>
                     {
                         return{
